@@ -13,7 +13,7 @@ const images = [
   },
 ];
 const ulEl = document.querySelector(".gallery")
- const liEl = images.map(img=>`<li><img srs = ${img.url} alt =${img.alt}/></li>`).join("");
+ const liEl = images.map(img=>`<li><img "src" = ${img.url} "alt" =${img.alt}/></li>`).join("");
 ulEl.insertAdjacentHTML("afterbegin", liEl);
 
 
